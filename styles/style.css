@@ -46,7 +46,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, Fira Sans Condensed;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -231,7 +231,7 @@ ol {
   outline: none;
 }
 
-.search-form__checkbox:checked+.search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked +.search-form__pseudo-checkbox::after {
   content: " ";
   min-inline-size: 15px;
   min-block-size: 15px;
@@ -242,8 +242,13 @@ ol {
   text-decoration: underline;
 }
 
+.search-form__label:hover {
+  text-decoration: underline;
+
+}
+
 .search-form__label:has(:focus-visible) {
-  outline: 1px solid #fff;
+  outline: none;
 }
 
 .search-form__pseudo-checkbox {
